@@ -12,8 +12,12 @@ article{
   padding: 10px;
   padding-top:0px;
 }
+
+section{
+  display: block;
+}
 p {
-  font-family: "Lato", sans-serif;
+  font-family: "Heebo", sans-serif;
   line-height: 28px;
   font-size: 16px;
   text-shadow: left;
@@ -59,8 +63,8 @@ h4 {
 /* ********************TABLE*********************** */
 table {
   padding: 5px;
-  width: 80%;
   text-align: left;
+  margin: auto;
 }
 
 th, td {
@@ -102,12 +106,49 @@ img {
   margin-bottom: 0px;
 }
 
+
+
+/* ************************NAVBAR************************** */
+.topnav {
+  overflow: hidden;
+  background-color: #c7a15e;
+  margin-top: -5px;
+padding: 10px;
+ align-items: center;
+  align-content: center;
+  border: 10px;
+  border-bottom:5px;
+  border-color: #922412;
+}
+
+.topnav a {
+  font-family: 'Spectral SC', serif;
+  float: center;
+  color:  #58170D;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #922412;
+  color: white;
+}
+
 /* ************************Container************************ */
 .container {
   display: inline-grid;
-    position: relative;
     color: white;
-}
+   padding: 10px;
+    margin: 10px;
+  }
+
 
 .bottom-left {
     position: absolute;
@@ -125,6 +166,7 @@ img {
     position: absolute;
     top: 8px;
     right: 16px;
+
 }
 
 .bottom-right {
@@ -133,9 +175,52 @@ img {
     right: 16px;
 }
 
-.centered {
+.center {
     position: absolute;
+    left: 0;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+    /* *****************************Character sheet page******************** */
+.charsheet section{
+  display: table;
+  clear: both;
+margin:auto;  width:90%;
+}
+
+.charsheet hr{
+  border-color:#922412;
+border-width: thick;
+}
+
+.charsheet h2{
+  color: #922412;
+  padding-bottom: 2px;
+  margin-bottom: 0px;
+}
+
+.charsheet p{
+   margin: 0px;
+}
+
+.charsheet tr{
+  margin: auto;
+
+}
+.charsheet table{
+  table-layout: fixed;
+  /* width: 100%; */
+  overflow: auto;
+}
+
+.charsheet th,td{
+  text-align: center;
+  color: #922412;
+  padding: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
 }
