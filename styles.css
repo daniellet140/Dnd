@@ -238,7 +238,7 @@ img {
 .grid-container {
   display: grid;
   grid-template:
-    'myArea myArea . . .';
+    'myArea myArea';
   grid-gap: 5px;
   margin-top: 0;
   /* padding: 10px; */
