@@ -8,14 +8,16 @@ body {
   margin-top: 0px;
 }
 
-article{
+article {
   padding: 20px;
-  padding-top:0px;
+  padding-top: 0px;
+  padding-bottom: 60px;
 }
 
-section{
+section {
   display: block;
 }
+
 p {
   font-family: "Heebo", sans-serif;
   line-height: 28px;
@@ -27,8 +29,8 @@ h1 {
   font-family: 'Spectral SC', serif;
   font-size: 30px;
   color: #58170D;
-text-align: center;
-margin: 0px;
+  text-align: center;
+  margin: 0px;
 }
 
 h2 {
@@ -88,48 +90,41 @@ th {
 img {
   border: 0px;
   border-radius: 0px;
-
 }
 
 .imgbutton {
   margin: 10px;
   border-radius: 50px;
-  width: 45%;
-
+  max-width: 300px;
 }
 
 .imgbutton:hover {
   opacity: 0.5;
 }
 
-
-
 /* **************************HEADER******************************** */
-
 .header {
   width: 100%;
   margin-bottom: 0px;
 }
-
-
 
 /* ************************NAVBAR************************** */
 .topnav {
   overflow: hidden;
   background-color: #c7a15e;
   margin-top: -5px;
-padding: 10px;
- align-items: center;
+  padding: 10px;
+  align-items: center;
   align-content: center;
   border: 10px;
-  border-bottom:5px;
+  border-bottom: 5px;
   border-color: #922412;
 }
 
 .topnav a {
   font-family: 'Spectral SC', serif;
   float: center;
-  color:  #58170D;
+  color: #58170D;
   text-align: center;
   padding: 15px;
   text-decoration: none;
@@ -149,167 +144,193 @@ padding: 10px;
 /* ************************Container************************ */
 .container {
   display: inline-grid;
-    color: white;
-   padding: 10px;
-    margin: 10px;
-  }
-
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
 
 .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
 }
 
 .top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
+  position: absolute;
+  top: 8px;
+  left: 16px;
 }
 
 .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-
+  position: absolute;
+  top: 8px;
+  right: 16px;
 }
 
 .bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
 }
 
 .center {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
 }
 
-    /* *****************************Character sheet page******************** */
-.charsheet section{
+/* *****************************Character sheet page******************** */
+.charsheet section {
   display: table;
   clear: both;
-margin:auto;  width:90%;
+  margin: auto;
+  width: 90%;
 }
 
-.charsheet hr{
-  border-color:#922412;
-border-width: thick;
+.charsheet hr {
+  border-color: #922412;
+  border-width: thick;
 }
 
-.charsheet h2{
+.charsheet h2 {
   color: #922412;
   padding: 2px;
   margin-bottom: 0px;
   margin-top: 0px;
 }
 
-.charsheet p{
-   margin: 0px;
+.charsheet p {
+  margin: 0px;
 }
 
-.charsheet tr{
-  margin: auto;
-
+.charsheetbox p {
+  font-size: 12
 }
-.charsheet table{
+
+.charsheet tr {}
+
+.charsheet table {
   table-layout: fixed;
   width: 100%;
   overflow: auto;
 }
 
-.charsheet th,td{
+.charsheet th, td {
   text-align: center;
   color: #922412;
-  padding: 10px;
   padding-top: 2px;
   padding-bottom: 2px;
+  padding-left: 10px;
+}
 
+.charsheet img {
+  padding: 0px;
+  max-width: 600px;
 }
 
 .item1 {
   grid-area: myArea;
 }
+
 .grid-container {
   display: grid;
   grid-template:
     'myArea myArea . . .';
-  grid-gap: 10px;
+  grid-gap: 5px;
   margin-top: 0;
-  padding: 10px;
+  /* padding: 10px; */
 }
-.grid-container>div {
 
-}
+.grid-container>div {}
 
 /* Add Animation */
 .modal-content, #caption {
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)}
-    to {-webkit-transform:scale(1)}
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
 }
 
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
 
 /* The Close Button */
 .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .close:hover,
 .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
 }
 
-#myImg:hover {opacity: 0.7;}
+#myImg:hover {
+  opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
 }
 
 /* Modal Content (image) */
 .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
 }
